@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import Link from "next/link";
 
 export default function QuizPage() {
   const soal = [
@@ -101,7 +102,7 @@ export default function QuizPage() {
               <p><strong>Penilaian:</strong> Otomatis</p>
             </div>
             <div className="cta-wrapper">
-              <a href="/" className="btn">Kembali</a>
+              <Link href="/" className="btn">Kembali</Link>
               <button className="btn primary" onClick={() => setMulai(true)}>Mulai Kuis</button>
             </div>
           </div>
@@ -137,7 +138,7 @@ export default function QuizPage() {
                 );
               })}
             </div>
-            <a href="/" className="btn">Kembali ke Beranda</a>
+            <Link href="/" className="btn">Kembali ke Beranda</Link>
           </div>
         )}
       </main>

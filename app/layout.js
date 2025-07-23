@@ -1,4 +1,5 @@
-import "./styles/globals.css"; // Pastikan path-nya benar
+import "./styles/globals.css";
+import Link from "next/link";
 
 export const metadata = {
   title: "Kuis TKA Online",
@@ -12,11 +13,11 @@ export default function RootLayout({ children }) {
         <div className="layout">
           <header className="header">
             <nav className="nav">
-              <a className="logo" href="/">EduSijaXpert</a>
+              <Link href="/" className="logo">EduSijaXpert</Link>
               <ul className="menu">
-                <li><a href="/" className="nav-link">Beranda</a></li>
-                <li><a href="/quiz" className="nav-link">Kuis</a></li>
-                <li><a href="#" className="nav-link">Leaderboard</a></li>
+                <li><Link href="/" className="nav-link">Beranda</Link></li>
+                <li><Link href="/quiz" className="nav-link">Kuis</Link></li>
+                <li><Link href="#" className="nav-link">Leaderboard</Link></li>
               </ul>
             </nav>
           </header>
